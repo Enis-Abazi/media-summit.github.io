@@ -1,0 +1,347 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Sans-Pro-Black";
+    src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Bold";
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-ExtraLight";
+    src: url(../fonts/SourceSansPro-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Italic";
+    src: url(../fonts/SourceSansPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Light";
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: rgb(0, 74, 152);
+}
+
+header .logo h1 {
+    font-size: 65px;
+    font-family: "Sans-Pro-ExtraLight";
+    color: #fff;
+    text-shadow: -1px -2px grey;
+}
+
+header .login {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+header .login h2 {
+    font-size: 25px;
+    color: #fff;
+    font-family: "Sans-Pro-Light";
+    text-shadow: 1px 1px grey;
+}
+
+header .login .btn a button {
+    padding: 7px;
+    width: 100px;
+    font-size: 16px;
+    font-family: "Sans-Pro-BOld";
+    color: #fff;
+    background: rgb(38 131 153);
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+section {
+    background: rgb(0, 74, 152);
+    padding: 100px;
+}
+
+section h2,
+h4 {
+    text-align: center;
+}
+
+section h2 {
+    padding: 20px 0 20px 0;
+    font-size: 30px;
+    font-family: "Sans-Pro-Black";
+    color: #fff;
+}
+
+section h4 {
+    padding: 5px 0 5px 0;
+    font-family: "Sans-Pro-Black";
+    font-size: 18px;
+    color: #fff;
+}
+
+section .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+section .row .col {
+    flex-basis: 50%;
+    padding: 0 50px 0 50px;
+}
+
+section .row .col input {
+    width: 100%;
+    padding: 8px;
+    font-size: 17px;
+    outline: none;
+    font-family: "Sans-Pro-Black";
+    margin: 10px 0 10px 0;
+}
+
+section .row .col label {
+    font-size: 20px;
+    font-family: "Sans-Pro-Light";
+    position: relative;
+    right: 160px;
+}
+
+section .row .col label[for=email] {
+    right: 145px;
+}
+
+section .row .col #second-email {
+    right: 110px;
+}
+
+section .row .col #second-password {
+    right: 125px;
+}
+
+section .row .col select {
+    padding: 8px;
+    font-size: 17px;
+    outline: none;
+    font-family: "Sans-Pro-Black";
+    margin: 10px 0 10px 0;
+    width: 100%;
+    color: #fff;
+    color: black;
+}
+
+section .row #less-padding {
+    padding: 0;
+}
+
+section .row .col label[for=city] {
+    right: 180px;
+}
+
+section .checked {
+    display: flex;
+    column-gap: 20px;
+    padding: 20px 0 0 50px;
+}
+
+section .checked input[type=checkbox] {
+    width: 15px;
+}
+
+section .register-btn {
+    padding: 20px 0 0 50px;
+}
+
+section .register-btn a button {
+    padding: 8px;
+    width: 100px;
+    font-size: 15px;
+    font-family: "Sans-Pro-Italic";
+    color: #fff;
+    background: #f5a656;
+    font-family: sans-serif;
+    border: transparent;
+    border-radius: 4px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    header .login {
+        padding: 20px 0 20px 0;
+    }
+    section {
+        padding: 0;
+    }
+    section .row {
+        flex-direction: column;
+    }
+    section .row .col label {
+        right: 95px;
+    }
+    section .row .col label[for=email] {
+        right: 80px;
+    }
+    section .row .col #second-email {
+        right: 45px;
+    }
+    section .row .col #second-password {
+        right: 65px;
+    }
+    section .row .col label[for=city] {
+        right: 120px;
+    }
+    section .checked {
+        padding: 10px;
+    }
+    section .register-btn {
+        padding: 20px 0 20px 50px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    header {
+        padding: 20px;
+        flex-direction: column;
+    }
+    section {
+        padding: 20px;
+    }
+    section .row {
+        flex-direction: column;
+    }
+    section .row .col label {
+        right: 0;
+        float: left;
+    }
+    section .row .col label[for=email] {
+        right: 0;
+        float: left;
+    }
+    section .row .col #second-email {
+        right: 0;
+        float: left;
+    }
+    section .row .col #second-password {
+        right: 0;
+        float: left;
+    }
+    section .row .col label[for=city] {
+        right: 0;
+        float: left;
+    }
+    section .checked {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    header {
+        padding: 25px;
+    }
+    section {
+        padding: 50px;
+    }
+    section .row .col label {
+        right: 0;
+        float: left;
+    }
+    section .row .col label[for=email],
+    section .row .col #second-email,
+    section .row .col #second-password,
+    section .row .col label[for=city] {
+        right: 0;
+        float: left;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    section .row .col label[for=email],
+    section .row .col #second-email,
+    section .row .col #second-password,
+    section .row .col label[for=city],
+    section .row .col label {
+        right: 0;
+        float: left;
+    }
+}

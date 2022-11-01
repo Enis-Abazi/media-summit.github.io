@@ -1,0 +1,260 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Sans-Pro-Black";
+    src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Bold";
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-ExtraLight";
+    src: url(../fonts/SourceSansPro-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Italic";
+    src: url(../fonts/SourceSansPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Light";
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+body {
+    background-image: linear-gradient(to right, white 50%, rgb(0, 74, 152)50%);
+}
+
+section {
+    padding: 200px;
+    background-image: linear-gradient(to right, white 50%, rgb(0, 74, 152)50%);
+}
+
+section .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+
+section .row .col {
+    flex-basis: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+section .row .col:nth-child(1) {
+    background: #fff;
+    color: #000;
+}
+
+section .row .col:nth-child(2) {
+    background: rgb(0, 74, 152);
+    color: #fff;
+}
+
+section .row .col:nth-child(1) h1 {
+    font-size: 35px;
+    font-family: "Sans-Pro-Bold";
+    padding: 20px;
+}
+
+section .row .col:nth-child(1) .social-medias {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 25px;
+}
+
+section .row .col:nth-child(1) .social-medias i {
+    border: 1px solid #2f97af;
+    padding: 10px;
+    border-radius: 100%;
+    color: #403d3d;
+    font-size: 20px;
+}
+
+section .row .col:nth-child(1) .login-form {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+section .row .col:nth-child(1) .login-form input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    font-size: 16px;
+    border: transparent;
+    background: #e3e3e3;
+    border: 1px solid #e3e3e3;
+}
+
+section .row .col:nth-child(1) .forgot h3 {
+    font-size: 20px;
+    font-family: "Sans-pro-Italic";
+    padding: 20px;
+}
+
+section .row .col:nth-child(1) .btn a button {
+    padding: 10px;
+    width: 125px;
+    border: 1px solid #4effe6;
+    background: rgb(0, 74, 152);
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    font-family: "Sans-Pro-Light";
+    text-transform: uppercase;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+section .row .col:nth-child(1) .btn a button:hover {
+    background: transparent;
+    transition: 0.3s ease;
+    color: rgb(0, 74, 152);
+    border: 2px solid #4effe6;
+}
+
+section .row .col:nth-child(2) {
+    align-self: center;
+}
+
+section .row .col:nth-child(2) h1 {
+    font-size: 35px;
+    font-family: "Sans-Pro-Bold";
+}
+
+section .row .col:nth-child(2) h4 {
+    font-size: 16px;
+    font-family: "Sans-Pro-Extralight";
+}
+
+section .row .col:nth-child(2) .btn-sign-up a button {
+    padding: 10px;
+    width: 125px;
+    border: 1px solid #4effe6;
+    background: transparent;
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    font-family: "Sans-Pro-Light";
+    text-transform: uppercase;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+section .row .col:nth-child(2) .btn-sign-up a button:hover {
+    background-color: #fff;
+    color: rgb(0, 74, 152);
+    transition: 0.3s ease-out;
+}
+
+section .row .col:nth-child(2) .btn-sign-up {
+    padding: 40px;
+}
+
+@media only screen and (max-width:600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    body {
+        background: rgb(0, 74, 152);
+    }
+    section {
+        background-image: linear-gradient(white 67.3%, rgb(0, 74, 152) 50%);
+        padding: 0px;
+    }
+    section .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    section .row .col:nth-child(1) .login-form {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    body {
+        background-image: linear-gradient(to right, white 50%, rgb(0, 74, 152)50%);
+    }
+    section {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    section {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}

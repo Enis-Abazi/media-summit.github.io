@@ -1,0 +1,518 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Sans-Pro-Black";
+    src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Bold";
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-ExtraLight";
+    src: url(../fonts/SourceSansPro-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Italic";
+    src: url(../fonts/SourceSansPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Pro-Light";
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+header {
+    text-align: start;
+    background-image: url(../images/media\ summit\ image\ logo.webp);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .informations {
+    padding: 300px 100px;
+}
+
+header .informations h1 {
+    font-size: 75px;
+    font-family: "Sans-Pro-ExtraLight";
+    color: #fff;
+}
+
+header .informations h3 {
+    font-size: 22px;
+    font-family: "Sans-Pro-Bold";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header .informations .btn {
+    padding: 20px 0 0 0;
+}
+
+header .informations .btn a button {
+    background-color: rgb(0, 74, 152);
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+    font-family: "Sans-Pro-Black";
+    width: 150px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.blog {
+    background: rgb(7, 19, 61);
+    padding: 200px;
+}
+
+.blog .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 50px;
+    color: #fff;
+    text-align: start;
+}
+
+.blog .row .col {
+    flex-basis: 50%;
+}
+
+.blog .row .col img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.blog .row .col h1 {
+    font-size: 50px;
+    font-family: "Sans-Pro-Italic";
+}
+
+.blog .row .col h4 {
+    font-size: 18px;
+    font-family: "Sans-Pro-Bold";
+}
+
+.blog .row .col .reserve {
+    padding: 20px 0 0 0;
+}
+
+.blog .row .col .reserve a button {
+    background-color: rgb(0, 74, 152);
+    color: #fff;
+    padding: 13px;
+    font-size: 17px;
+    font-family: "Sans-Pro-Black";
+    width: 200px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.desc {
+    background: rgb(0, 74, 152);
+    padding: 200px 200px 250px 200px;
+}
+
+.desc .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 10px;
+    position: relative;
+}
+
+.desc .row .col {
+    flex-basis: 50%;
+}
+
+.desc .row .col:nth-child(1) {
+    position: relative;
+    bottom: 100px;
+}
+
+.desc .row .col:nth-child(2) {
+    position: relative;
+    top: 150px;
+}
+
+.desc .row .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.desc .row .col h1 {
+    font-size: 30px;
+    font-family: "Sans-Pro-Italic";
+    color: #fff;
+}
+
+.desc .row .col h3 {
+    font-size: 17px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.desc .row .col .learn {
+    padding: 20px 0 0 0;
+}
+
+.desc .row .col .learn a button {
+    background-color: rgb(7, 19, 61);
+    color: #fff;
+    padding: 13px;
+    font-size: 17px;
+    font-family: "Sans-Pro-Black";
+    width: 200px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.highlights {
+    background: rgb(7, 19, 61);
+    padding: 100px;
+    border-top: 1px solid white;
+}
+
+.highlights .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+    color: #fff;
+}
+
+.highlights .row .col {
+    flex-basis: 50%;
+}
+
+.highlights .row .col:first-child {
+    align-self: center;
+}
+
+.highlights .row .col h1 {
+    font-size: 50px;
+    font-family: "Sans-Pro-Light";
+}
+
+.highlights .row .col:last-child {
+    padding: 75px;
+    background: rgb(0, 74, 152);
+}
+
+.highlights .row .col .listed {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 20px;
+}
+
+.highlights .row .col .listed .up {
+    font-size: 23px;
+    font-family: "Sans-Pro-Italic";
+    position: relative;
+    right: 55px;
+}
+
+.highlights .row .col .listed #up-li {
+    font-size: 23px;
+    font-family: "Sans-Pro-Italic";
+    position: relative;
+    right: 55px;
+}
+
+.highlights .row .col .listed #up-li-1 {
+    font-size: 23px;
+    font-family: "Sans-Pro-Italic";
+    position: relative;
+    right: 55px;
+}
+
+.highlights .row .col .listed .down {
+    font-size: 17px;
+    font-family: "Sans-Pro-Bold";
+}
+
+.highlights .row .col .listed .up::before {
+    content: " 01 ";
+    color: #fff;
+    position: relative;
+    font-size: 50px;
+    right: 10px;
+    font-family: "Sans-Pro-Italic";
+}
+
+.highlights .row .col .listed #up-li::before {
+    content: " 02 ";
+    color: #fff;
+    position: relative;
+    font-size: 50px;
+    right: 10px;
+    font-family: "Sans-Pro-Italic";
+}
+
+.highlights .row .col .listed #up-li-1::before {
+    content: " 03 ";
+    color: #fff;
+    position: relative;
+    font-size: 50px;
+    right: 10px;
+    font-family: "Sans-Pro-Italic";
+}
+
+footer {
+    padding: 100px;
+    background-image: url(../images/pexels-laura-tancredi-7078661.jpg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+footer .row .col {
+    flex-basis: 50%;
+    color: #fff;
+}
+
+footer .row .col h1 {
+    font-size: 50px;
+    font-family: "Sans-Pro-Italic";
+}
+
+footer .row .col .one-li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 10px;
+}
+
+footer .row .col .one-li .up {
+    font-size: 25px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+footer .row .col .one-li .down {
+    font-size: 20px;
+    font-family: "Sans-Pro-Italic";
+    color: #fff;
+}
+
+@media only screen and (max-width:600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header .informations {
+        padding: 250px 50px 0 20px;
+    }
+    header .informations h1 {
+        font-size: 50px;
+    }
+    header .informations h3 {
+        font-size: 14px;
+    }
+    .blog {
+        padding: 20px;
+    }
+    .blog .row {
+        flex-direction: column;
+        row-gap: 50px;
+        padding: 40px 0 40px 0;
+        text-align: center;
+    }
+    .blog .row .col {
+        padding: 20px;
+        text-align: start;
+    }
+    .blog .row .col img {
+        border-radius: 0;
+    }
+    .highlights {
+        padding: 20px;
+    }
+    .highlights .row {
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+    .highlights .row .col .listed {
+        row-gap: 25px;
+    }
+    .highlights .row .col .listed .up,
+    .highlights .row .col .listed #up-li,
+    .highlights .row .col .listed #up-li-1 {
+        position: unset;
+    }
+    .desc {
+        padding: 20px;
+    }
+    .desc .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .desc .row .col {
+        text-align: start;
+        padding: 20px;
+    }
+    .desc .row .col:nth-child(1),
+    .desc .row .col:nth-child(2) {
+        position: unset;
+    }
+    .desc .row .col img {
+        border-radius: 0;
+    }
+    footer {
+        padding: 10px;
+    }
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .row .col h1 {
+        font-size: 30px;
+    }
+    footer .row .col .one-li .up {
+        font-size: 20px;
+    }
+    footer .row .col .one-li .down {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    header .informations {
+        padding: 300px 50px;
+    }
+    .blog {
+        padding: 50px;
+    }
+    .blog .row {
+        flex-direction: column;
+        padding: 20px;
+        row-gap: 20px;
+    }
+    .highlights {
+        padding: 50px;
+    }
+    .highlights .row {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 20px;
+    }
+    .desc {
+        padding: 100px 0 100px 0;
+    }
+    .desc .row {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 10px;
+    }
+    .desc .row .col:nth-child(2),
+    .desc .row .col:nth-child(1) {
+        position: unset;
+    }
+    footer {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    .blog {
+        padding: 150px;
+    }
+    .highlights {
+        padding: 50px;
+    }
+    .desc {
+        padding: 150px 0 200px 0;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}
